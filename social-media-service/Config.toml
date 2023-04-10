@@ -1,0 +1,17 @@
+moderate = true
+natsUrl = "nats://localhost:4222"
+enableSmsNotification = true
+
+[databaseConfig]
+database = "social_media_database"
+user = "social_media_user"
+password = "dummypassword"
+host = "localhost"
+port = 3306
+
+[ballerina.observe]
+tracingEnabled=true
+tracingProvider="jaeger"
+
+[ballerinax.jaeger]
+samplerParam=1.0
